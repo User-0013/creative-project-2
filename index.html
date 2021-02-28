@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Discover Anime/Manga</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+
+<body class="page">
+
+  <div class="main-header">
+    <h1>Anime/Manga Finder</h1>
+  </div>
+
+  <div class="header">
+    <h2>Key Information</h2>
+  </div>
+
+  <div class="text-box">
+    <p>This applet allows you to search MyAnimeList for information on specific
+      anime/manga. It also allows the searching of anime/manga characters.
+      We only display the top fifty (50) results. Less results will be displayed
+      when there aren't fifty (50) results.
+      Click on the image to go directly to MyAnimeList to learn more
+      about an anime/manga/character if it looks interesting!
+    </p>
+    <p>This applet uses the Jikan API which limits the amount of bulk requests
+      we can make to one (1) every four (4) seconds. Because of this, you can
+      only submit one (1) search every four (4) seconds. We apologize for any inconvenience
+      this may cause our users.
+    </p>
+  </div>
+
+  <div class="search-wrapper">
+    <div class="search">
+      <form>
+        <label class="label">Enter an anime/manga/character</label>
+        <div class="input-wrapper">
+          <p></p>
+          <select id="selector">
+            <option value="anime">Anime</option>
+            <option value="manga">Manga</option>
+            <option value="character">Character</option>
+          </select>
+          <p></p>
+          <input id="userInput" type="text"></input><br />
+        </div>
+        <div class="submit-wrapper">
+          <input id="animeSubmit" type="submit" value="Submit"></input>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="searchResults">
+  </div>
+
+  <div class='footer'>
+    <div class='footer-icons'>
+      <a class='github' href='https://github.com/User-0013/creative-project-2'>
+        <span class='iconify github' data-icon='ant-design:github-filled' data-inline='false'></span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script src='https://code.iconify.design/1/1.0.7/iconify.min.js'></script>
+  <script text="type/javascript" src="/script.js"></script>
+</body>
+
+</html>
